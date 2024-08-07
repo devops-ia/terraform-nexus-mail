@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0](https://github.com/devops-ia/terraform-nexus-mail/compare/v1.0.0...v1.1.0) (2024-08-07)
+
+
+### Features
+
+* Update-files ([796846a](https://github.com/devops-ia/terraform-nexus-mail/commit/796846a83e0d334aff93fe898ac267d751477a44))
+
 ## 1.0.0 (2024-02-18)
 
 
