@@ -1,6 +1,6 @@
 # Nexus Mail
 
-This module allows you to create **Nexus Privilege as a global resource** and **individual Nexus Privilege resources.** For individual examples, see the usage snippets and [examples](https://github.com/terraform-nexus-modules/terraform-nexus-mail/tree/main/examples).
+This module allows you to create **Nexus Privilege as a global resource** and **individual Nexus Privilege resources.** For individual examples, see the usage snippets and [examples](https://github.com/devops-ia/terraform-nexus-mail/tree/main/examples).
 
 ## Provider
 You need use a [Nexus provider](https://registry.terraform.io/providers/datadrivers/nexus/latest/docs).
@@ -19,9 +19,8 @@ provider "nexus" {
 
 ```hcl
 module "nexus_mail" {
-  source  = "terraform-nexus-modules/mail/nexus"
-  version = "1.0.0"
-  
+  source  = "devops-ia/mail/nexus"
+
   port         = 25
   host         = "examplehost.org"
   from_address = "from@examplehost.org"
@@ -43,9 +42,8 @@ module "nexus_mail" {
 
 ```hcl
 module "nexus_mail_config" {
-  source  = "terraform-nexus-modules/mail/nexus//modules/nexus-mail-config"
-  version = "1.0.0"
-  
+  source  = "devops-ia/mail/nexus//modules/nexus-mail-config"
+
   port         = 25
   host         = "examplehost.org"
   from_address = "from@examplehost.org"
@@ -100,8 +98,8 @@ No resources.
 
 ## Authors
 
-Module is maintained by [DevOps IA](https://github.com/devops-ia) with help from [these awesome contributors](https://github.com/terraform-nexus-modules/terraform-nexus-mail/graphs/contributors).
+Module is maintained by [DevOps IA](https://github.com/devops-ia) with help from [these awesome contributors](https://github.com/devops-ia/terraform-nexus-mail/graphs/contributors).
 
 ## License
 
-Apache 2 Licensed. See [LICENSE](https://github.com/terraform-nexus-modules/terraform-nexus-mail/blob/main/LICENSE) for full details.
+Apache 2 Licensed. See [LICENSE](https://github.com/devops-ia/terraform-nexus-mail/blob/main/LICENSE) for full details.
